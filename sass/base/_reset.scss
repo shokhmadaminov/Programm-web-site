@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    outline: 1px solid $color-primary;
+    outline-offset: 2px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    // overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $white-bg-color;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px 2rem;
+    margin: 0px auto;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 4.6rem;
+    line-height: 1;
+    span {
+        color: $primary-color;
+    }
+}
+
+main {
+    // sticky footer
+    flex-grow: 1;
+}
