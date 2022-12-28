@@ -1,0 +1,55 @@
+.wrapper {
+    padding-top: 1.2rem;
+    background-color: $gray-bg-color;
+    background-image: url("../images/png/wrapper-bg-img.png");
+    background-position: right -740px center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header {
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    background-color: $white-bg-color;
+    border-radius: 7.5rem;
+
+    &__logo {
+        display: flex;
+        margin-right: 7.3rem;
+        &:hover {
+            opacity: 0.8;
+        }
+        &:active {
+            opacity: 0.6;
+        }
+        img {
+            width: 53px;
+            height: 20px;
+        }
+    }
+
+    &__register--link {
+        @extend %sitenav-link-styles;
+        margin-right: 1.5rem;
+    }
+
+    &__btn {
+        font-weight: 500;
+        line-height: 1;
+        color: $color-white;
+        padding: 0.9rem 1.6rem;
+        border-radius: 3.4rem;
+        background-color: $color-secondary;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 9px;
+            height: 8px;
+            margin-right: 4px;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+}

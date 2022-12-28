@@ -1,0 +1,54 @@
+%sitenav-link-styles {
+    font-size: 1.3rem;
+    line-height: 1.1;
+    transition: all 0.1s linear;
+    position: relative;
+    &:hover {
+        color: $color-primary;
+    }
+    &:active {
+        opacity: 0.6;
+    }
+    &::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: $color-primary;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        transition: width 0.3s linear;
+        visibility: hidden;
+    }
+    &:hover::after {
+        width: 100%;
+        visibility: visible;
+    }
+    &::before {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: $color-primary;
+        position: absolute;
+        bottom: -4px;
+        right: 0;
+        transition: width 0.3s linear;
+        visibility: visible;
+    }
+    &:hover::before {
+        width: 100%;
+        visibility: hidden;
+    }
+}
+
+.sitenav {
+    margin-right: auto;
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+    a {
+        @extend %sitenav-link-styles
+    }
+}
