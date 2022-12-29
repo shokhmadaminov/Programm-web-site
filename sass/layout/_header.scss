@@ -17,12 +17,18 @@
     @include responsive(big-table) {
         padding: 1rem 1.2rem;
     }
+    @include responsive(table) {
+        justify-content: space-between;
+    }
 
     &__logo {
         display: flex;
         margin-right: 7.3rem;
         @include responsive(big-table) {
             margin-right: 2rem;
+        }
+        @include responsive(table) {
+            margin-right: 0;
         }
 
         &:hover {
