@@ -33,6 +33,10 @@ body {
     max-width: 1200px;
     padding: 0px 2rem;
     margin: 0px auto;
+
+    @include responsive(big-table) {
+        padding: 0px 1rem;
+    }
 }
 
 h1 {

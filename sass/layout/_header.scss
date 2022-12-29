@@ -43,6 +43,10 @@
         background-color: $color-secondary;
         display: flex;
         align-items: center;
+        transition: background-color 0.3s ease;
+        &:hover {
+            background-color: $color-primary;
+        }
 
         img {
             width: 9px;
