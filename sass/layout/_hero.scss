@@ -1,0 +1,81 @@
+.hero {
+    padding-bottom: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    @include responsive(big-table) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__text-wraper {
+        width: 100%;
+        max-width: 638px;
+        @include responsive(big-table) {
+            margin-bottom: 6rem;
+        }
+    }
+
+    h1 {
+        margin-bottom: 3rem;
+        @include responsive(phone) {
+            margin-bottom: 1.8rem;
+        }
+
+        span{
+            color: $color-primary;
+            font-weight: 500;
+        }
+        i {
+            font-weight: 600;
+        }
+    }
+
+    div {
+        div {
+            width: 100%;
+            max-width: 365px;
+            margin-bottom: 1.8rem;
+            @include responsive(big-table) {
+                margin: 0 auto;
+                margin-bottom: 1.8rem;
+            }
+        }
+    }
+
+    hr {
+        height: 1px;
+        background-color: #dedede;
+        border: none;
+        margin-bottom: 1.5rem;
+        @include responsive(phone) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__arrow-btn {
+        width: 37px;
+        height: 37px;
+        background-color: $color-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translate(-50%);
+
+        img {
+            width: 13px;
+        }
+    }
+
+    &__img {
+        @include responsive(phone) {
+            width: 70%;
+            height: auto;
+        }
+    }
+}   

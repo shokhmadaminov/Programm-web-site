@@ -2,9 +2,14 @@
     padding-top: 1.2rem;
     background-color: $gray-bg-color;
     background-image: url("../images/png/wrapper-bg-img.png");
-    background-position: right -740px center;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-position: center left 220px;
+    @include responsive(big-table) {
+        background-position: top -80px center;
+    }
+    @include responsive(phone) {
+        background-position: top -40vh center;
+    }
 }
 
 .header {
@@ -19,6 +24,9 @@
     }
     @include responsive(table) {
         justify-content: space-between;
+    }
+    @include responsive(phone) {
+        margin-bottom: 2.4rem;
     }
 
     &__logo {
